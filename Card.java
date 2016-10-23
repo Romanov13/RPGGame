@@ -4,5 +4,19 @@ public class Card{
   private int defence;
   private String element;
   
+  public String getName(){
+    return name;
 }
+  
+  public int getPower(){
+    return power;
+  }
 
+  public int getDefence(){
+    return defence;
+  }
+
+  public int getElement(){
+    return element;
+  }
+}
