@@ -4,7 +4,7 @@ public class Player{
 
   private int hp = 20;
   private String name; 
-  ArrayList<Card> cardInHand;
+  ArrayList<Card> cardInHand = new ArrayList<Card>();
   
   Player(String n){
     name = n;
