@@ -3,12 +3,14 @@ public class Card{
   private int power;
   private int defence;
   private String element;
+  private String[] elementList = {"water", "fire", "air", "earth"};
+  private String[] nameList = {"name1", "name2", "name3", "name4", "name5"};
   
-   Card(String cName, int cPower, int cDefence, String cElement){
-   name = cName;
-    power = cPower;
-    defence = cDefence;
-    element = cElement;
+   Card(){
+   name = nameList[new Random().nextInt(4)];
+    power = new Random().nextInt(10);
+    defence = new Random().nextInt(10);;
+    element = elementList[new Random().nextInt(4)];
   }
   
   public String getName(){
