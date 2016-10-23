@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Card{
   private String name;
   private int power;
@@ -25,7 +27,7 @@ public class Card{
     return defence;
   }
 
-  public int getElement(){
+  public String getElement(){
     return element;
   }
 }

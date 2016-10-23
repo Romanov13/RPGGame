@@ -1,28 +1,34 @@
+import java.util.ArrayList;
+
 public class Player{
 
   private int hp = 20;
   private String name; 
-  private ArrayList<Card> cardInHand;
+  ArrayList<Card> cardInHand;
   
   Player(String n){
     name = n;
   }
-    public getName(){
+    public String getName(){
     return name;
   }
-  public getHP(){
+  public int getHP(){
     return hp;
   }
   
-  public void addACard(Card){
-   cardInHand.add(Card); 
+  public void addACard(Card c){
+   cardInHand.add(c); 
   }
   
   public Card playCard(int i){
     return cardInHand.get(i);
   }
   
-  public reduceHP(int d){
+  public void reduceHP(int d){
     hp = hp - d;
+  }
+  
+  public int countCards(){
+	  return cardInHand.size();
   }
 }
