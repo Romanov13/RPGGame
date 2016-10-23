@@ -3,10 +3,10 @@ import java.util.Random;
 
 public class RPGGame{
 
-  private ArrayList<Card> deck;
+  private ArrayList<Card> deck = new ArrayList<Card>();
   private int deckSize = 24;
   private int cardsOnTable = 2;
-  private ArrayList<Player> players;
+  private ArrayList<Player> players = new ArrayList<Player>();
   private int numOfPlayers = 2;
   boolean defeated = false;
   
@@ -86,7 +86,7 @@ public class RPGGame{
      }
                public void  gameOver(){
                 	 defeated = true;
-                	 System.out.print(players.get(0).getHP());
+                	 System.out.println(players.get(0).getHP());
                 	 System.out.println(players.get(1).getHP());
                  }
   
