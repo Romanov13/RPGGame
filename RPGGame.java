@@ -1,6 +1,8 @@
 public class RPGGame{
 
   private ArrayList<Card> deck;
+  private int deckSize = 24;
+  private int cardsOnTable = 2;
   private ArrayList<Player> players;
   private int numOfPlayers = 2;
   
@@ -13,10 +15,11 @@ public class RPGGame{
   }
   
   public void go(){
+    
   }
   
   public void initiate(){
-   for(int i = 0; i<24; i++){
+   for(int i = 0; i<deckSize; i++){
     deck.add(new Card()); 
    }
     for(int i = 0; i<numOfPlayers; i++){
@@ -32,5 +35,9 @@ public class RPGGame{
       
     
   }
+                 
+                 public void round(){
+  players.get(new Random().nextInt
+     }
   
 }
