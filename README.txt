@@ -2,7 +2,7 @@
 I realized I haven't instantiate ArrayLists in previous project.
 Sorry guys.
 
-Test for Khasang
+Test task for Khasang
 
 Made by Sergey Efimenko
 email: sefimenko13@gmail.com
